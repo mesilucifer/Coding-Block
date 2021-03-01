@@ -1,0 +1,108 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(236 238 239);
+}
+/* utilities */
+.pr-10{
+    padding-right: 10px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+header div{
+
+    /* dimensions */
+    width: 90%;
+    /* padding */
+    padding: 20px 10px;
+    /* margin */
+    margin: 10px auto 20px;
+    /* border */
+   border-bottom: 1px solid #ddd;
+}
+.search-input{
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    padding : 15px 20px;
+    border-color: #0077b6;
+    border-radius: 10px;
+}
+h1 i{
+    margin-left: 10px;
+}
+/* Aside bar */
+.asidebar{
+    color: #0077b6;
+    position: sticky;
+    top: 20px;
+    font-size: 18px;
+}
+#contact{
+    width: 90%;
+    margin: 10px auto;
+}
+.contact-section{
+    margin-bottom: 20px;
+}
+#contact .contact-list{
+    list-style: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+#contact ul .contact-name{
+   font-size: 1em;
+   font-weight: bold;
+   /* border-bottom: 1px solid #b7b7a4; */
+   padding: 15px 10px;
+   color: #343a40;
+}
+article{
+    border-bottom: 1px solid #b7b7a4;
+}
+article:last-child{
+    border-bottom: none;
+}
+#contact ul .contact-name .fa-user-circle{
+   color:#0077b6;
+   font-size: 25px;
+}
+.contact-icons{
+   float: right;
+}
+.contact-icons li i{
+    color:#0077b6;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.contact-icons li i:hover{
+    color: #f77f00;
+}
+.contact-options{
+    display: inline;
+}
+/* Add btn */
+#add-contact{
+     background-color: #06d6a0;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     text-align: center;
+     padding: 10px;
+     position: fixed;
+     right: 15px;
+     bottom: 20px;
+}
+#add-contact a i{
+     color: #fff;
+}
