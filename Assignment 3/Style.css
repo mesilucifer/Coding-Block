@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+    background-image: url("https://images.unsplash.com/photo-1492112007959-c35ae067c37b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=331&q=80");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'RocknRoll One', sans-serif;
+}
+button{
+    display: block;
+    width: 20%;
+    vertical-align: middle;
+    margin: 350px auto;
+    padding: 20px 10px;
+    font-size: 1.4em;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: #ff7b00;
+    color: #fff;
+    border: none;
+    transition: all 0.2s;
+
+}
+button:hover{
+     background-color: transparent;
+     border: 2px solid #ffc300;
+     transform: translateY(-20px);
+    
+}
+button::after{
+   content:'→' ; 
+   font-size: 1.2em;
+   padding-left: 5px;
+}
