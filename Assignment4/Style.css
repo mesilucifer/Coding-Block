@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+nav{
+   width: 100%;
+   height: 60px; 
+   background-color: #f48c06;
+   padding: 5px 20px;
+   display: flex;
+   align-items: center;
+}
+nav .logo{
+   font-size: 1.5rem;
+   font-weight: 900;
+   width: 25%;
+   color: #fff;
+   padding: 10px 15px;
+  
+}
+nav ul{
+ list-style: none;
+ display: flex;
+ float: right;
+ justify-content: space-evenly;
+ width: 75%;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+nav ul li{
+    padding: 10px 15px;
+}
+nav ul li:hover{
+    background-color: #ffba08;
+    cursor: pointer;
+}
+    
+
+/* header */
+header {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+header #intro-header{
+    height: 100%;
+    width: 100%;
+    animation: changeBg 15s infinite ease-in-out;
+}
+@keyframes changeBg{
+    0%{
+        background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    20%{
+        background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    40%{
+        background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njd8fGZvb2R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    60%{
+        background-image:linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+
+    }
+    80%{
+        background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    100%{
+        background-image: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url('https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+header div:nth-of-type(1){
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+}
+header div:nth-of-type(1) h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    
+}
+header div:nth-of-type(1) p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 25px;
+
+}
+header div:nth-of-type(1) a{
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #f48c06;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+#features-section{
+    width:100%;
+    height: 50vh;
+    background-color: #ddd;
+    display: flex;
+    padding: 60px 80px;
+    
+}
+#features-section article{
+   padding: 10px 20px;
+   box-shadow: 1px 1px 10px 3px #000000;
+   margin: 5px 10px;
+    
+}
+#features-section article h3, #features-section article p {
+   text-align: center;
+    
+}
+.features-icon{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 50px;
+}
+.features-icon i{
+    color: #f48c06;
+    transition: all 0.2s;
+}
+.features-icon i:hover{
+    transform: scale(1.1);
+}
+
+
+/* grid */
+.container{
+    padding: 20px;
+    width: 75vw;
+    border: 1px solid #ddd;
+    margin: 30px auto;
+    display: grid;
+    /* to divide grid into no of columns */
+    grid-template-columns: repeat( auto-fill, minmax(350px, 1fr) );
+    gap: 20px;
+    grid-auto-rows: minmax(200px,auto);
+    grid-auto-columns:minmax(200px,auto) ;
+}
+.food-items{
+    border-radius: 10px;
+}
+.food-items img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* when i hover on the food-items image should be opaque */
+.food-items:hover img{
+    opacity: 0.35;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: all 0.2s;
+}
+.container div{
+    position: relative;
+}
+.container div i{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: scale(0);
+    font-size:1.2rem;
+    transition: all 0.2s;
+}
+.container div:hover i{
+    transform: scale(1.5);
+}
+#food-menu h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px 0px;
+    color:#f48c06;
+}
+#user-section{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+}
+#footer{
+    width: 100%;
+    height: 10vh;
+    background: #22223b;
+    padding: 20px 40px;
+}
+#footer a{
+   font-size: 30px;
+   color: #fff;
+}
+#footer p{
+   font-size: 20px;
+   color: #fff;
+   float: right;
+}
+@media (max-width: 650px){
+    nav{
+        width: 100%;
+        height: 300px; 
+        flex-direction: column;
+        text-align: center;
+       
+     }
+     nav ul{
+        list-style: none;
+        display: flex;
+        float: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+       }
+       #features-section{
+        width:100%;
+        height: 80vh;
+        padding: 20px 30px 10px 30px;
+        flex-direction: column;
+        
+    }
+    #features-section article{
+        padding: 5px 10px;
+        box-shadow: 1px 1px 10px 3px #000000;
+        margin: 5px 10px;
+         
+     }
+}
