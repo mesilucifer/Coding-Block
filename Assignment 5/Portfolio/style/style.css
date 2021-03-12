@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #333;
+    background: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+h2{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 18px;
+    line-height: 1;
+}
+.w-70{
+    max-width: 70%;
+}
+.titleMessage{
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  height: 250px;
+  z-index: 5;
+  margin-top: -125px;
+}
+.titleMessage .heading p{
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+.titleMessage .heading .main{
+  font-size: 50px;
+}
+.titleMessage .heading .sub{
+  font-size: 23px;
+}
+.carousel-control-prev{
+  z-index: 5555;
+}
+.carousel-control-next{
+  z-index: 5555;
+}
+
+
+.carousel .carousel-item {
+    height: 90vh;
+  }
+  
+  .carousel-item img {
+     width: 100%;
+     height: 100%;
+  }
+  .about-intro h2:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302f2f, #4361ee);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302f2f, #4361ee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about-intro h2{
+    position: relative;
+    padding-bottom: 10px;
+  }
+  .about-img{
+    border-radius: 50%;
+  }
+  .about-intro p{
+    padding: 10px 20px;
+  }
+  .section{
+      padding: 100px 0;
+  }
+  .skills-section{
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302f2f, #4361ee);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302f2f, #4361ee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ddd;
+  }
+  .skill{
+    text-align: center;
+    margin-left: 10px;
+  }
+  .chart{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    /* margin-left: 25px; */
+    text-align: center;
+  }
+  .chart canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .chart .percent{
+    color: #000;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+  }
+  .chart .percent:after{
+    content: '%'
+  }
+
+  .banner2{
+    width:100%;
+    height:400px;
+    background: #E6DADA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #302f2f, #4361ee);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #302f2f, #4361ee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.fas{
+  font-weight: 900;
+}
+.card{
+    position: relative;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: translateY(-5%);
+    transition: 0.3s;
+    border-bottom: 4px solid blue;
+    box-shadow:0 2px 8px 2px #0000005c;
+
+}
