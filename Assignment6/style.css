@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+section{
+    /* border: 3px solid #000; */
+    width: 400px;
+    height: 80vh;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative;
+    background-color:#f4f3ee;
+    padding: 0;
+}
+#todo-header{
+    width: 100%;
+    height: 200px;
+}
+#todo-header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+/* todos div */
+ul{
+    width: 100%;
+    list-style: none;
+}
+/* ul li{
+    width: 100%;
+    padding: 15px 20px;
+}
+ul li:nth-of-type(odd){
+    background-color: beige;
+}
+ul li:nth-of-type(even){ 
+    background-color:blanchedalmond;
+} */
+.todo-container{
+    width: 100%;
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    overflow-y: scroll;
+}
+.item{
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid #fff;
+}
+.item-inp{
+    background: none;
+    outline: none; 
+    border: none;
+    width: 250px;
+    font-size: 1.1rem;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: #ddd;
+}
+.edit-btn{
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.remove-btn{
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    background: none;
+    outline: none;
+    border: none;
+    color: #e63946;
+    cursor: pointer;
+}
+.add-item{
+    position: absolute;
+    bottom: 0;
+}
+.btn-holder{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+
+
+.add-item{
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-inp{
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    outline: none;
+
+}
+
+.add-btn{
+    font-size: 1.6rem;
+    margin: 0 0.5rem;
+    background: none;
+    outline: none;
+    border: none;
+   color: #00b4d8;
+   float: center;
+}
+.task-status-div{
+    padding: 0.4rem 0.6rem;
+    text-align: left;
+    color: #007f5f;
+    font-size: 16px;
+}
+#task-status{
+    color: red;
+}
+.completed{
+    text-decoration: line-through;
+    color: #ddd;
+}
